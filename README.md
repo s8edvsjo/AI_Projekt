@@ -5,6 +5,8 @@ Detta projekt går ut på att skapa en låt/lyrics som den sen läser/sjunger so
 ## Code
 ### Create_RapSong 
 Scriptet skapar ett lyrics till en egengenererad låttext som den sjunger/läser upp. 
+### rapgod
+Texten som jag tränat min AI på.
 
 
 ## Examples
