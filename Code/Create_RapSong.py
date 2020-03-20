@@ -9,15 +9,12 @@ import os
 filepath="checkpoint_RapgodTrained3.tar"
 googefileid= "1-0LAvjKMX2xG7_pbY3C2lH15891ko5oh"
 
-
 def extract():
     """Copies the checkpoint folder from a mounted Google Drive."""
     with tarfile.open(filepath, 'r') as tar:
         tar.extractall()
     os.remove(filepath)
     print("File",filepath, "Removed!")
-
-
 
 def download_file_from_google_drive(id, destination):
     def get_confirm_token(response):
@@ -47,7 +44,6 @@ def download_file_from_google_drive(id, destination):
         response = session.get(URL, params = params, stream = True)
 
     save_response_content(response, destination)
-
 
 # download_file_from_google_drive(googefileid,filepath)
 # extract()
